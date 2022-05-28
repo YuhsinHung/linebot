@@ -7,7 +7,7 @@ from linebot.models import *
 #ImagemapSendMessage(組圖訊息)
 def imagemap_message():
     message = ImagemapSendMessage(
-        base_url="https://i.imgur.com/BfTFVDN.jpg", #[注意]圖片為超連結
+        base_url="https://i.imgur.com/2uzX0k7.jpg", #[注意]圖片為超連結
         alt_text='最新的協力廠商',
         base_size=BaseSize(height=2000, width=2000),
         actions=[
@@ -83,7 +83,7 @@ def Carousel_Template2():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png',
+                    thumbnail_image_url='https://i.imgur.com/RYPsBAIb.jpg',
                     title='研究發展與創新', #[學生改]標題
                     text='本企業重視研發並設定產品開發中心與研發中心', #[學生改]副標題
                     actions=[
@@ -102,7 +102,7 @@ def Carousel_Template2():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuo7n2_HNSFuT3T7Z9PUZmn1SDM6G6-iXfRC3FxdGTj7X1Wr0RzA',
+                    thumbnail_image_url='https://i.imgur.com/u9K8M5nb.jpg',
                     title='知識管理專區', #[學生改]標題
                     text='此為歷年文件下載專區', #[學生改]副標題
                     actions=[
@@ -122,7 +122,7 @@ def Carousel_Template2():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Number_3_in_yellow_rounded_square.svg/200px-Number_3_in_yellow_rounded_square.svg.png',
+                    thumbnail_image_url='https://i.imgur.com/GeXk6urb.jpg',
                     title='經營團隊', #[學生改]標題
                     text='豐泰企業以誠信守法的精神維持良好之公司治理',#[學生改]網站標題
                     actions=[
