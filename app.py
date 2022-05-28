@@ -24,9 +24,9 @@ import time
 app = Flask(__name__)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 # Channel Access Token
-line_bot_api = LineBotApi('你的Channel AcessToken')
+line_bot_api = LineBotApi('0tshi2R2GO1b5TTPgn+MWcR9/KK9t5mxu7xMn3fMHwqyWGbY2a6JzD5eStEJVfQOZI1ctXejuOV4lCJhQH5f+j3Jq13sW0bf2kc5TF0kMfxFnDuGfojnaGUFaGQMQDdF5sc48OpKmlpHlITqDwr4kQdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
-handler = WebhookHandler('你的Channel Secret')
+handler = WebhookHandler('fdc982d21962071bfd4fdddd733e7d8d')
 
 
 # 監聽所有來自 /callback 的 Post Request
@@ -59,11 +59,11 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     #[學生改]可以改你要偵測的字詞    
     elif '功能列表' in msg:#當使用者在群組輸入[功能列表]字樣
-        message = Carousel_Template()
+        message = Carousel_Template2()
         line_bot_api.reply_message(event.reply_token, message)
     #[學生改]可以改你要偵測的字詞    
     elif '產品資訊' in msg: #當使用者在群組輸入[產品資訊]字樣
-        message = image_carousel_message1#test()
+        message = productList()
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
