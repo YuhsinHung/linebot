@@ -13,21 +13,21 @@ def imagemap_message():
         actions=[
             URIImagemapAction(
                 #左上圖片廠商
-                link_uri="https://www.yuntech.edu.tw/", #[學生改]可以改網址
+                link_uri="https://www.google.com.tw/", #[學生改]可以改網址
                 area=ImagemapArea(
                     x=0, y=0, width=1000, height=1000
                 )
             ),
             URIImagemapAction(
                 #右上廠商
-                link_uri="https://www.yuntech.edu.tw/",#[學生改]可以改網址
+                link_uri="https://tw.yahoo.com/",#[學生改]可以改網址
                 area=ImagemapArea(
                     x=1000, y=0, width=1000, height=1000
                 )
             ),
             URIImagemapAction(
                 #左下
-                link_uri="https://www.yuntech.edu.tw/",#[學生改]可以改網址
+                link_uri="https://www.amazon.com/teddy-bear/s?k=teddy+bear/",#[學生改]可以改網址
                 area=ImagemapArea(
                     x=0, y=1000, width=1000, height=1000
                 )
